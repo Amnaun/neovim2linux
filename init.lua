@@ -3,6 +3,9 @@ require("config.lazy")
 require("lazy").setup({
   spec = { { "folke/lazy.nvim", version = "*" } },
   git = { url = "git@github.com:%s.git" }, -- 强制使用 SSH
+  "louis_lifu/awesome-deepseek-integration",
+  "yetone/avante.nvim",
+  dependencies = { "nvim-lua/plenary.nvim" },
 })
 
 vim.opt.clipboard = "unnamedplus"
