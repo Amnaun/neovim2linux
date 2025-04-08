@@ -31,3 +31,5 @@ vim.api.nvim_set_keymap(
 vim.g.neovide_opacity = 0.75
 
 vim.g.neovide_window_blurred = true
+
+vim.g.avante_host_mount = "/" -- 允许访问根目录
