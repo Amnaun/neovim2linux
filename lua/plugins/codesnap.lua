@@ -6,9 +6,6 @@ return {
     require("codesnap").setup({
       has_line_number = true,
       bg_theme = "dusk",
-      custom_css = [[
-      .comment { color: #FFA500 !important; }      .line-number { opacity: 0.8; }          
-      ]],
       has_breadcrumbs = true,
       show_workspace = true,
       breadcrumbs_separator = "🌟",
