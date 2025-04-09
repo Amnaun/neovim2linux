@@ -31,6 +31,7 @@ require("lazy").setup({
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
   install = { colorscheme = { "tokyonight", "habamax" } },
+  --vim.api.nvim_set_hl(0, "Comment", { fg = "#FFD700", italic = true }),
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
