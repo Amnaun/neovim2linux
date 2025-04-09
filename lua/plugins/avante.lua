@@ -13,6 +13,9 @@ return {
         api_key_name = "DEEPSEEK_API_KEY",
         endpoint = "https://api.deepseek.com",
         model = "deepseek-coder", -- your desired model (or use gpt-4o, etc.)
+        timeout = 30000,
+        temperature = 0,
+        max_tokens = 8192,
       },
     },
   },
