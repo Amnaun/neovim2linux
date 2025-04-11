@@ -6,18 +6,26 @@ return {
   opts = {
     -- add any opts here
     -- for example
-    provider = "deepseek",
-    vendors = {
-      deepseek = {
-        __inherited_from = "openai",
-        api_key_name = "DEEPSEEK_API_KEY",
-        endpoint = "https://api.deepseek.com",
-        model = "deepseek-coder", -- your desired model (or use gpt-4o, etc.)
-        timeout = 30000,
-        temperature = 0,
-        max_tokens = 8192,
-      },
+    provider = "gemini",
+    gemini = {
+      model = "gemini-2.5-pro-exp-03-25",
+      api_key_name = "GEMINI_API_KEY",
+      --endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro-exp-03-25:generateContent?key=AIzaSyCRetzL3gHnq2JnsNgpjksMAYz2AmPI5R0",
+      timeout = 30000,
+      temperature = 0,
+      max_tokens = 8192,
     },
+    -- vendors = {
+    --   deepseek = {
+    --     __inherited_from = "openai",
+    --     api_key_name = "DEEPSEEK_API_KEY",
+    --     endpoint = "https://api.deepseek.com",
+    --     model = "deepseek-coder", -- your desired model (or use gpt-4o, etc.)
+    --     timeout = 30000,
+    --     temperature = 0,
+    --     max_tokens = 8192,
+    --   },
+    -- },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
   build = "make",
