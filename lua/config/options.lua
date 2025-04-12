@@ -33,3 +33,6 @@ vim.g.neovide_opacity = 0.75
 vim.g.neovide_window_blurred = true
 
 vim.g.avante_host_mount = "/" -- 允许访问根目录
+
+--设置字体
+vim.o.guifont = "Maple Mono NF CN:h24"
