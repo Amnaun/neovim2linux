@@ -36,3 +36,10 @@ vim.g.avante_host_mount = "/" -- 允许访问根目录
 
 --设置字体
 vim.o.guifont = "Maple Mono NF CN:h24"
+
+--设置退出Neovim时光标正确
+vim.api.nvim_create_autocmd({ "ExitPre" }, {
+  callback = function()
+    vim.opt.guicursor = "a:ver30-blinkon1-blinkoff250-blinkwait10"
+  end,
+})
