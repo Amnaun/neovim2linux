@@ -13,3 +13,14 @@ vim.keymap.set("n", "1r", ":CompetiTest run", { silent = true, noremap = true })
 
 --设置CodeSnap插件
 vim.api.nvim_set_keymap("v", "<leader>cs", ":CodeSnap<CR>", { noremap = true, silent = true })
+
+--设置Neovide全屏
+function NeovideToggleFullScreen()
+  if vim.g.neovide_fullscreen then
+    vim.g.neovide_fullscreen = false
+  else
+    vim.g.neovide_fullscreen = true
+  end
+end
+
+vim.api.nvim_set_keymap("n", "<F11>", ":lua NeovideToggleFullScreen()<CR>", { silent = true, noremap = true })
