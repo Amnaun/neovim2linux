@@ -43,3 +43,7 @@ vim.api.nvim_create_autocmd({ "ExitPre" }, {
     vim.opt.guicursor = "a:ver30-blinkon1-blinkoff250-blinkwait10"
   end,
 })
+
+--设置高光
+vim.api.nvim_set_hl(0, "Function", { fg = "#FF00FF", bold = true }) -- 函数名发光
+vim.api.nvim_set_hl(0, "Keyword", { fg = "#00FFFF", italic = true }) -- 关键字发光
