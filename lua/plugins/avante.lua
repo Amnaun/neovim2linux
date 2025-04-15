@@ -10,7 +10,7 @@ return {
     gemini = {
       model = "gemini-2.5-pro-exp-03-25",
       api_key_name = "GEMINI_API_KEY",
-      --endpoint = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro-exp-03-25:generateContent?key=AIzaSyCRetzL3gHnq2JnsNgpjksMAYz2AmPI5R0",
+      endpoint = "https://generativelanguage.googleapis.com/v1beta/models",
       timeout = 30000,
       temperature = 0,
       max_tokens = 8192,
