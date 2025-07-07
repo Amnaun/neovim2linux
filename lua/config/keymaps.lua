@@ -6,10 +6,10 @@
 vim.keymap.set("i", "jk", "<Esc>", { silent = true, noremap = true })
 
 --设置CompetiTese插件
-vim.keymap.set("n", "1a", ":CompetiTest add_testcase", { silent = true, noremap = true })
-vim.keymap.set("n", "1e", ":CompetiTest edit_testcase", { silent = true, noremap = true })
-vim.keymap.set("n", "1d", ":CompetiTest delete_testcase", { silent = true, noremap = true })
-vim.keymap.set("n", "1r", ":CompetiTest run", { silent = true, noremap = true })
+vim.keymap.set("n", "1a", ":CompetiTest add_testcase<CR>", { silent = true, noremap = true })
+vim.keymap.set("n", "1e", ":CompetiTest edit_testcase<CR>", { silent = true, noremap = true })
+vim.keymap.set("n", "1d", ":CompetiTest delete_testcase<CR>", { silent = true, noremap = true })
+vim.keymap.set("n", "1r", ":CompetiTest run<CR>", { silent = true, noremap = true })
 
 --设置CodeSnap插件
 vim.api.nvim_set_keymap("v", "<leader>cs", ":CodeSnap<CR>", { noremap = true, silent = true })
