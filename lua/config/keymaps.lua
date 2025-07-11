@@ -2,6 +2,14 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+--设置最上面是shift+l
+vim.keymap.set(
+  { "n", "v" }, -- {'n', 'v'} 表示在 Normal 和 Visual 模式下都生效
+  "L", -- 'L' 代表 Shift + l
+  "gg", -- 要执行的命令
+  { noremap = true, silent = true, desc = "Go to first line" }
+)
+
 --设置同步全局粘贴板
 vim.keymap.set("i", "jk", "<Esc>", { silent = true, noremap = true })
 
